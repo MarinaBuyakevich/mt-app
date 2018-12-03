@@ -1,0 +1,118 @@
+<!--<div class="image"> Your content </div>-->
+<h1>Welcome {{title}} </h1>
+<h2> Hello, {{name}}</h2>
+
+<nav class="top-menu">
+  <ul class="menu-main">
+    <li><a href="#home" class="current"><li><a href="">Home</a></li></a></li>
+    <li><a href="#priorittes">Priorittes</a></li>
+    <li><a href="#techniques">Techniques</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<div>
+  <h1 class="home_h1"><a name="home"></a>
+    Major Priorities
+  </h1>
+  <div class="home">
+    <h3 class="home_h3">
+      Blockchain technical analysis
+    </h3>
+    <p class="home_p">
+      Real-time data of blockchain
+      single transaction or transaction groups,
+      activity of TOP wallets,
+      dynamic of crypto flows,
+      token distribution and many other
+      alarms can be used for investment risk management.
+    </p>
+  </div>
+  <div class="home">
+    <h3 class="home_h3">
+      Miner's second life
+    </h3>
+    <p class="home_p">
+      Neural network cluster on the ASIC hardware.
+      The gist is a new firmware for ASIC hardware that
+      implements cluster calculations of neural network
+      algorithms for pattern recognition and time
+      series forecasting.
+    </p>
+  </div>
+  <div class="home">
+    <h3 class="home_h3">
+      Indicators developments
+    </h3>
+    <p class="home_p">
+      We develop trading indicators for time series
+      forecasting and automated trading decision on
+      the base of Neural network (CNN), Wavelet
+      analysis, blockchain inner information and famous
+      traders opinions.
+    </p>
+  </div>
+</div>
+<div>
+  <h1 class="priorittes"><a name="priorittes"></a>
+    Priorittes
+  </h1>
+  <div>
+    <img class="priorittes_img" src="../assets/img/5s.jpg" alt="img">
+    <img class="priorittes_img" src="../assets/img/put.jpg" alt="img">
+  </div>
+</div>
+<div>
+    <h1 class="techniques_h"><a name="techniques"></a>
+      Techniques
+    </h1>
+  <p class="techniques_p">
+    In the frame of trading robot project,
+    we developed a prediction algorithm for
+    8 steps ahead. The core of the algorithm
+    is a convolutional neural network (CNN),
+    which is trained on pre-prepared images.
+    Each image (see Fig.) is a ROI of a
+    time-frequency wavelet spectrogram with
+    a size of 32x24. At the classifier's
+    output we get the probability of the
+    presence of a cyclic channel pattern
+    for the future 8 steps. The algorithm
+    performs scanning of 8 frequency channels
+    in real time simultaneously.
+  </p>
+</div>
+<div class="contact_div">
+  <h1 class="contact"><a name="contact"></a>
+    Contact
+  </h1>
+  <div class="contact_map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.6237090226546!2d30.737768379875934!3d46.47596097922813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319c92f971b1%3A0x5daaa46ca0f15dc5!2z0YPQuy4g0KDQuNGI0LXQu9GM0LXQstGB0LrQsNGPLCAzMywg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1543587496796" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="contact_text">
+    <h3 class="contact_h">Address</h3>
+    <p class="contact_p">
+      Rishelievska Street, 33,<br>
+      Odesa, Odes'ka oblast, 65000
+    </p>
+    <h3 style="text-align: center; color: #5A394E">
+      Time
+    </h3>
+    <p class="contact_p">
+      Monday - Friday <br>
+      9:00 - 18:00 <br>
+      Saturday - Sunday <br>
+      Output
+    </p>
+  </div>
+</div>
+<footer>
+  <div class="footer">
+    <ul class="menu-main">
+      <li><a href="#home" class="current"><li><a href="">Home</a></li></a></li>
+      <li><a href="#priorittes">Priorittes</a></li>
+      <li><a href="#techniques">Techniques</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+<router-outlet></router-outlet>
