@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'My first Angular App!';
   name = 'Angular';
-  img = 'src/assets/img/cos.jpg';
+  text = 'Hello, I am second component';
 }
