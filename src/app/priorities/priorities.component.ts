@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./priorities.component.css']
 })
 export class PrioritiesComponent implements OnInit {
+  ts: any;
 
   constructor() { }
 
