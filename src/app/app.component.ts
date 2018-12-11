@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {TranslatorService} from './services/translator.service';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My first Angular App!';
-  name = 'Angular';
   text = 'Hello, I am second component';
+  constructor(private ts: TranslatorService) {
+    ts.set('EN');
+  }
 }
+
