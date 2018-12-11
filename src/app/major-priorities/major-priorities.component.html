@@ -1,0 +1,37 @@
+<div class="bt-list">
+  <mat-checkbox
+    *ngFor="let lang of langList"
+    (click)="setLang($event, lang)"
+    [checked]="activeLang === lang">
+    {{ts.translate('labels.' + lang)}}
+  </mat-checkbox>
+</div>
+<div>
+  <h1 class="home_h1"><a name="home"></a>
+    {{ts.translate('MajorPriorities.h1')}}
+  </h1>
+  <div class="home">
+    <h3 class="home_h3">
+      {{ts.translate('MajorPriorities.h3')}}
+    </h3>
+    <p class="home_p">
+      {{ts.translate('MajorPriorities.p')}}
+    </p>
+  </div>
+  <div class="home">
+    <h3 class="home_h3">
+      {{ts.translate('MajorPriorities.h3')}}
+    </h3>
+    <p class="home_p">
+      {{ts.translate('MajorPriorities.p')}}
+    </p>
+  </div>
+  <div class="home">
+    <h3 class="home_h3">
+      {{ts.translate('MajorPriorities.h3')}}
+    </h3>
+    <p class="home_p">
+      {{ts.translate('MajorPriorities.p')}}
+    </p>
+  </div>
+</div>
