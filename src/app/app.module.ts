@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { TranslatorService } from './services/translator.service';
+import { MatCheckboxModule } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,9 @@ import { TranslatorService } from './services/translator.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [
     TranslatorService,
