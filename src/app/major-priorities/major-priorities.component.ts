@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslatorService} from '../services/translator.service';
+import {major_priorities} from '../dictionaries/major-priorities';
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-major-priorities',
@@ -7,22 +9,24 @@ import {TranslatorService} from '../services/translator.service';
   styleUrls: ['./major-priorities.component.css']
 })
 export class MajorPrioritiesComponent implements OnInit {
-  public move: boolean;
+  private changeLang: Subscription;
   public langList: any;
   public activeLang: string;
+  public source: any;
+
   constructor(public ts: TranslatorService) {
-    this.move = false;
-    this.langList = ts.langList;
-    this.activeLang = 'EN';
+    this.changeLang = ts.changeLang$.subscribe(data => {
+      this.setSource(data.lang);
+    });
+    this.source = major_priorities[ts.currentLang];
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
-  setLang(ev: Event, lang: string) {
-    ev.preventDefault();
-    this.activeLang = lang;
-    this.ts.set(this.activeLang);
+  public setSource(lang: string) {
+    this.source = major_priorities[lang];
   }
 }
+
 
