@@ -1,4 +1,4 @@
-export const MajorPriorities = {
+export const major_priorities = {
   EN: [
     {
       h1: 'Major Priorities',
