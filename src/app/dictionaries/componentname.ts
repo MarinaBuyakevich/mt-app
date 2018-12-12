@@ -1,4 +1,4 @@
-export const component = {
+export const componentname = {
   EN: [
     {
       h1: 'Hello, I am second component',
@@ -10,3 +10,4 @@ export const component = {
     }
   ]
 };
+
