@@ -1,4 +1,4 @@
-export const priorinies = {
+export const priorities = {
   EN: [
     {
       h1: 'Priorities',
