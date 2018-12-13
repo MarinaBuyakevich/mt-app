@@ -1,29 +1,33 @@
-<div>
-    <h1 class="techniques_h"><a name="techniques"></a>
-      {{ts.translate('labels.contact')}}
+<ng-container *ngFor="let addres of source">
+  <div>
+    <h1><a name="techniques"></a>
+      {{ts.translate('title.mpCont')}}
     </h1>
     <p class="techniques_p">
-      {{ts.translate('contact.p')}}
+      {{addres.text}}
     </p>
   </div>
   <div class="contact_div">
-    <h1 class="contact"><a name="contact"></a>
-      {{ts.translate('contact.h1')}}
+    <h1><a name="contact"></a>
+      {{addres.h}}
     </h1>
     <div class="contact_map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.6237090226546!2d30.737768379875934!3d46.47596097922813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319c92f971b1%3A0x5daaa46ca0f15dc5!2z0YPQuy4g0KDQuNGI0LXQu9GM0LXQstGB0LrQsNGPLCAzMywg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1543587496796" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="contact_text">
-      <h3 class="contact_h">{{ts.translate('contact.h3')}}</h3>
-      <p class="contact_p">
-        {{ts.translate('contact.p')}}
-      </p>
-      <h3 style="text-align: center; color: #5A394E">
-        {{ts.translate('contact.h3')}}
+      <h3 class="contact_h">
+        {{addres.h3}}
       </h3>
       <p class="contact_p">
-        {{ts.translate('contact.p')}}
+        {{addres.p}}
+      </p>
+      <h3 style="text-align: center; color: #5A394E">
+        {{addres.time}}
+      </h3>
+      <p class="contact_p">
+        {{addres.pm}}
       </p>
     </div>
   </div>
+</ng-container>
 
