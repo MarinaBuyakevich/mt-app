@@ -19,7 +19,11 @@ export const RU = {
     go_to_top: 'Наверх',
     RU: 'pусский',
     EN: 'english',
-    major_priorities: 'Основные приоритеты',
+  },
+  title: {
+    mpHeader: 'Основные приоритеты',
+    mpCont : 'Методы',
+    Priorit : 'Приоритеты',
   },
   errors: {},
   info: {},

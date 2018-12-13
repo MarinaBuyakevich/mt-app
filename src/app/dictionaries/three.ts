@@ -1,10 +1,7 @@
-export const three = {
+export const Three = {
   EN: [
     {
       h1 : 'Hi, I am the third component',
-      img: '../../assets/img/19.jpg',
-      img2: '../../assets/img/90.jpg',
-      img3: '../../assets/img/888.jpg',
       p : 'Space is the boundless three-dimensional extent in which\n' +
         '    objects and events have relative position and direction.\n' +
         '    Physical space is often conceived in three linear dimensions,\n' +
@@ -52,9 +49,6 @@ export const three = {
   RU: [
     {
       h1 : 'Привет, я третий компонент',
-      img: '../../assets/img/19.jpg',
-      img2: '../../assets/img/90.jpg',
-      img3: '../../assets/img/888.jpg',
       p : 'Пространство - это безграничная трехмерная степень, в которой объекты' +
         ' и события имеют относительное положение и направление.\n' +
         ' Физическое пространство часто представляется в трех линейных измерениях,\n' +

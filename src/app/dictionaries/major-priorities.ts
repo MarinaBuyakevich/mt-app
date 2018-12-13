@@ -1,7 +1,6 @@
-export const major_priorities = {
+export const MPriorities = {
   EN: [
     {
-      h1: 'Major Priorities',
       h3: 'Blockchain technical analysis',
       p: 'Real-time data of blockchain\n' +
         ' single transaction or transaction groups,\n' +
@@ -29,7 +28,6 @@ export const major_priorities = {
   ],
   RU: [
     {
-      h1: 'Основные приоритеты',
       h3: 'Блокчейн технический анализ',
       p: 'Данные в реальном времени об ' +
         ' отдельных транзакциях или группах' +

@@ -1,12 +1,14 @@
-export const componentname = {
+export const CName = {
   EN: [
     {
-      h1: 'Hello, I am second component',
+      name: 'Hello, I am second component',
+      img : '../../assets/img/cos.jpg',
     }
   ],
   RU: [
     {
-      h1: 'Привет, я второй компонент',
+      name: 'Привет, я второй компонент',
+      img : '../../assets/img/cos.jpg',
     }
   ]
 };

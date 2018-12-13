@@ -18,7 +18,11 @@ export const EN = {
   labels: {
     RU: 'pусский',
     EN: 'english',
-    major_priorities: 'Major Priorities',
+  },
+  title: {
+    mpHeader: 'Major Priorities',
+    mpCont : 'Techniques',
+    Priorit : 'Priorities',
   },
   errors: {},
   info: {},

@@ -1,7 +1,6 @@
-export const contact = {
+export const Contact = {
   EN: [
-    {h1: 'Techniques',
-      p: 'In the frame of trading robot project,\n' +
+    {text: 'In the frame of trading robot project,\n' +
         ' we developed a prediction algorithm for\n' +
         ' 8 steps ahead. The core of the algorithm\n' +
         ' is a convolutional neural network (CNN),\n' +
@@ -14,24 +13,19 @@ export const contact = {
         ' for the future 8 steps. The algorithm\n' +
         ' performs scanning of 8 frequency channels\n' +
         ' in real time simultaneously.',
-    },
-    {
-      h1: 'Contact',
+      h: 'Contact',
       h3: 'Address',
       p: 'Rishelievska Street, 33,\n' +
-        ' Odesa, Odes\'ka oblast, 65000'
-    },
-    {
-      h3: 'Time',
-      p: 'Monday - Friday\n' +
+        ' Odesa, Odes\'ka oblast, 65000',
+      time: 'Time',
+      pm: 'Monday - Friday\n' +
         ' 9:00 - 18:00\n' +
         ' Saturday - Sunday\n' +
         ' Output',
     },
   ],
   RU: [
-    { h1: 'Методы',
-      p: 'В рамках проекта торгового робота' +
+    {text: 'В рамках проекта торгового робота' +
         ' мы разработали алгоритм прогнозирования ' +
         ' на 8 шагов вперед. Ядром алгоритма ' +
         ' является сверточная нейронная сеть (CNN), ' +
@@ -45,16 +39,12 @@ export const contact = {
         ' Алгоритм выполняет сканирование 8 ' +
         ' частотных каналов в режиме реального' +
         ' времени одновременно.',
-    },
-    {
-      h1: 'Контакт',
+      h: 'Контакт',
       h3: 'Адресс',
       p: 'Ришельевская, 33, Одесса,' +
-        ' Одесская область, 65000'
-    },
-    {
-      h3: 'Время',
-      p: 'Понедельник - Пятница\n' +
+        ' Одесская область, 65000',
+      time: 'Время',
+      pm: 'Понедельник - Пятница\n' +
         ' 9:00 - 18:00\n' +
         ' Суббота - Воскресенье\n' +
         ' Выходной',
