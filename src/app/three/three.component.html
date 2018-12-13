@@ -1,13 +1,17 @@
-<h1>{{ts.translate('three.h1')}}</h1>
+<ng-container *ngFor="let img of source">
+  <h1>
+    {{img.h1}}
+  </h1>
+  <p class="p">
+    {{img.p}}
+  </p>
+</ng-container>
 <div>
   <img class="img" src="../../assets/img/19.jpg" alt="img">
   <img class="img" src="../../assets/img/90.jpg" alt="img">
   <img class="img" src="../../assets/img/888.jpg" alt="img">
 </div>
-<div>
-  <h3>{{text}}</h3>
-  <p class="p">
-    {{ts.translate('three.p')}}
-  </p>
-</div>
+
+
+
 
