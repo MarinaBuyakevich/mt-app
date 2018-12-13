@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslatorService} from '../services/translator.service';
-import {contact} from '../dictionaries/contact';
+import {Contact} from '../dictionaries/contact';
 import {Subscription} from 'rxjs';
 
 @Component({
@@ -10,19 +10,18 @@ import {Subscription} from 'rxjs';
 })
 export class ContactComponent implements OnInit {
   private changeLang: Subscription;
-  public source: string;
-
+  public source: any;
   constructor(public ts: TranslatorService) {
     this.changeLang = ts.changeLang$.subscribe(data => {
       this.setSource(data.lang);
     });
-    this.source = contact[ts.currentLang];
+    this.source = Contact[this.ts.currentLang];
   }
 
   ngOnInit() {
   }
 
   private setSource(lang: string) {
-    this.source = contact[lang];
+    this.source = Contact[lang];
   }
 }
