@@ -1,14 +1,13 @@
-.home_h1{
-  display: block;
-  text-align:center;
-  color: #6c465f;
-  font-size: 30px;
-}
-
 .img{
   margin-top: 20px;
   width: 100%;
   height: auto;
 }
 
+h1 {
+  color: rgba(190, 0, 188, 0.64);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+  text-align:center;
+}
 
