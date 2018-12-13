@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslatorService} from '../services/translator.service';
-import {priorities} from '../dictionaries/priorities';
+import {Priorities} from '../dictionaries/priorities';
 import {Subscription} from 'rxjs';
 
 
@@ -12,18 +12,17 @@ import {Subscription} from 'rxjs';
 export class PrioritiesComponent implements OnInit {
   private changeLang: Subscription;
   public source: any;
-  private priorities: any;
-  constructor(public ts: TranslatorService) {
+   constructor(public ts: TranslatorService) {
     this.changeLang = ts.changeLang$.subscribe(data => {
       this.setSource(data.lang);
     });
-    this.source = this.priorities[ts.currentLang];
+    this.source = Priorities[this.ts.currentLang];
   }
 
   ngOnInit() {
   }
 
   private setSource(lang: string) {
-    this.source = priorities[lang];
+    this.source = Priorities[lang];
   }
 }
