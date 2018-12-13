@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslatorService} from '../services/translator.service';
-import {major_priorities} from '../dictionaries/major-priorities';
+import {MPriorities} from '../dictionaries/major-priorities';
 import {Subscription} from 'rxjs';
 
 @Component({
@@ -13,19 +13,27 @@ export class MajorPrioritiesComponent implements OnInit {
   public langList: any;
   public activeLang: string;
   public source: any;
-
   constructor(public ts: TranslatorService) {
     this.changeLang = ts.changeLang$.subscribe(data => {
       this.setSource(data.lang);
     });
-    this.source = major_priorities[ts.currentLang];
+    this.source = MPriorities[this.ts.currentLang];
   }
 
   ngOnInit() {
   }
 
-  public setSource(lang: string) {
-    this.source = major_priorities[lang];
+  // public setSource(lang: string) {
+  //   this.source = MPriorities[lang];
+  // }
+
+  setLang(ev: Event, lang: string) {
+    ev.preventDefault();
+    this.activeLang = lang;
+    this.ts.set(this.activeLang);
+  }
+  setSource(lang: string) {
+    this.source = MPriorities[lang];
   }
 }
 
