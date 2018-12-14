@@ -1,5 +1,5 @@
 <div class="bt-list">
-  <mat-checkbox
+  <mat-checkbox class="fancy-checkbox"
     *ngFor="let lang of langList"
     (click)="setLang($event, lang)"
     [checked]="activeLang === lang">
