@@ -3,6 +3,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
   text-align:center;
+  margin-top: 85px;
 }
 .home{
   display: inline-block;
@@ -25,18 +26,3 @@ h1 {
   color: #97678a;
 }
 
-.bt-list {
-  display: block;
-  /*position: absolute;*/
-  bottom: 30%;
-  right: 5px;
-  width: 80px;
-  height: 100px;
-}
-.bt-list mat-checkbox {
-  color: #ff00a1;
-  font-size: 12px;
-}
-.bt-list mat-checkbox .mat-checkbox-background {
-  background-color: rgb(62, 159, 15);
-}
