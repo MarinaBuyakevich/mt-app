@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+.bt-list {
+  display: block;
+  position: absolute;
+  bottom: 85%;
+  right: 100px;
+}
+
+.bt-list mat-checkbox {
+  color: #560269;
+  font-size: 14px;
+  margin-left: -15px;
+  padding-left: 40px;
+}
+
+mat-checkbox{
+  margin: 2px 2px 0 2px;
+  margin-top: 1px \9;
+  line-height: normal;
+  width: 16px;
+  height: 16px;
+}
+
+:host /deep/.matCheckboxClass .mat-checkbox-checked,
+.mat-accent.mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent,
+.mat-checkbox-background {
+  background-color: rgb(86, 2, 105) !important;
+}
+
+
