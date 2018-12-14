@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { TranslatorService } from './services/translator.service';
 import { MatCheckboxModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MatCheckboxModule } from '@angular/material';
     BrowserModule,
     AppRoutingModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
     TranslatorService,
