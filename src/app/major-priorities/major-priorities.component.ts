@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {TranslatorService} from '../services/translator.service';
 import {trigger} from '@angular/animations';
 import {Subscription} from 'rxjs';
@@ -16,16 +16,17 @@ import {config} from '../config';
     ]),
   ]
 })
-export class MajorPrioritiesComponent implements OnInit, AfterViewChecked {
-  public move: boolean;
+export class MajorPrioritiesComponent implements OnInit {
   public langList: any;
   public activeLang: string;
+  public startFrame: boolean;
   public source: any;
   private changeLang = Subscription;
 
+
   constructor(
     public ts: TranslatorService) {
-    this.move = false;
+    this.startFrame = true;
     this.langList = config().app.lang_list;
     this.langList = ts.langList;
     this.activeLang = 'EN';
@@ -36,6 +37,10 @@ export class MajorPrioritiesComponent implements OnInit, AfterViewChecked {
   }
 
   ngOnInit() {
+    const startFrame = document.getElementById('start-frame');
+    if (startFrame.clientHeight !== window.innerHeight) {
+      startFrame.style.height = window.innerHeight + 'px';
+    }
   }
 
   setLang(ev: Event, lang: string) {
@@ -46,16 +51,12 @@ export class MajorPrioritiesComponent implements OnInit, AfterViewChecked {
   setSource(lang: string) {
     this.source = MPriorities[lang];
   }
-
-  ngAfterViewChecked() {
-    const startFrame = document.getElementById('start-frame');
-    if (startFrame.clientHeight !== window.innerHeight) {
-      startFrame.style.height = window.innerHeight + 'px';
-      const items: any = startFrame.querySelectorAll('.graph .graph-wrapper .graph-inner .graph-item');
-      items.forEach(item => {
-        item.lastChild.style.width = startFrame.clientWidth * 2 + 'px';
-      });
-    }
-  }
+  // ngAfterViewChecked() {
+  //   const startFrame = document.getElementById('start-frame');
+  //   if (startFrame.clientHeight !== window.innerHeight) {
+  //     startFrame.style.height = window.innerHeight + 'px';
+  //   }
+  // }
 }
+
 
