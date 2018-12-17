@@ -19,14 +19,12 @@ import {config} from '../config';
 export class MajorPrioritiesComponent implements OnInit {
   public langList: any;
   public activeLang: string;
-  public startFrame: boolean;
   public source: any;
   private changeLang = Subscription;
 
 
   constructor(
     public ts: TranslatorService) {
-    this.startFrame = true;
     this.langList = config().app.lang_list;
     this.langList = ts.langList;
     this.activeLang = 'EN';
@@ -37,10 +35,6 @@ export class MajorPrioritiesComponent implements OnInit {
   }
 
   ngOnInit() {
-    const startFrame = document.getElementById('start-frame');
-    if (startFrame.clientHeight !== window.innerHeight) {
-      startFrame.style.height = window.innerHeight + 'px';
-    }
   }
 
   setLang(ev: Event, lang: string) {
@@ -51,12 +45,6 @@ export class MajorPrioritiesComponent implements OnInit {
   setSource(lang: string) {
     this.source = MPriorities[lang];
   }
-  // ngAfterViewChecked() {
-  //   const startFrame = document.getElementById('start-frame');
-  //   if (startFrame.clientHeight !== window.innerHeight) {
-  //     startFrame.style.height = window.innerHeight + 'px';
-  //   }
-  // }
 }
 
 
